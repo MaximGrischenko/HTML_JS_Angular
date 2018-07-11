@@ -1,0 +1,29 @@
+<nav id="navigation-bar" (window:resize)="onResize($event)">
+  <ul class="navigation" [ngClass]="{invisible: !visibility}">
+    <li class="nav-element">
+      <a routerLink="" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">Menu</a>
+    </li>
+    <li class="nav-element">
+      <a routerLink="catering" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">Catering</a>
+    </li>
+    <li class="nav-element">
+      <a routerLink="about" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">About as</a>
+    </li>
+    <li class="nav-element">
+      <a routerLink="contacts" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">Contact</a>
+    </li>
+  </ul>
+  <div class="menu-bar">
+    <ul>
+      <li class="menu-icon" (click)="toogle()">
+        <svg width="25" height="22">
+          <use xlink:href="../assets/svg/sprite.symbol.svg#menu-icon"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+</nav>

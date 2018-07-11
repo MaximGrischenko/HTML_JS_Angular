@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="16"
+     viewBox="0 0 19 16">
+    <defs>
+        <path id="jqeoa"
+              d="M1305 45c0-.52-.4-.95-1-1h-14c-.6.05-1 .48-1 1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1zm0-5c0-.52-.4-.95-1-1h-14c-.6.05-1 .48-1 1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1zm-16 10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1c0-.52-.4-.95-1-1h-14c-.6.05-1 .48-1 1z"/>
+    </defs>
+    <g>
+        <g transform="translate(-1287 -37)">
+            <use fill="#fff" xlink:href="#jqeoa"/>
+        </g>
+    </g>
+</svg>

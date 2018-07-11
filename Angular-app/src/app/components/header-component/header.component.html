@@ -1,0 +1,11 @@
+<header id="header-container">
+  <ul class="gallery">
+    <li class="gallery-item" *ngFor="let image of gallery">
+      <a href="#">
+        <span class="icon-instagram"></span>
+        <span>#hotdogs</span>
+      </a>
+      <img src={{image.url}} alt="Photo">
+    </li>
+  </ul>
+</header>

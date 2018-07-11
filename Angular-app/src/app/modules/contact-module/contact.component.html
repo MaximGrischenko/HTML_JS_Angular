@@ -1,0 +1,21 @@
+<div id="form-container">
+  <form>
+    <div class="group">
+      <input type="text" name="name" [(ngModel)]="contacts.name" required>
+      <span class="bar"></span>
+      <label>Name</label>
+    </div>
+    <div class="group">
+      <input type="text" name="email" [(ngModel)]="contacts.email" required />
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+    <div class="group">
+      <textarea name="comment" [(ngModel)]="contacts.comment"></textarea>
+      <span class="bar"></span>
+    </div>
+
+    <input type="button" value="SEND" (click)="SendContacts(contacts)">
+  </form>
+</div>
+

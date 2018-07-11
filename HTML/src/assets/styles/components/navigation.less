@@ -1,0 +1,51 @@
+ul.navigation {
+  .sm-block({ display: none; });
+  li.nav-element {
+    float: left;
+    .sm-block({ float: none; });
+    a {
+      display: block;
+      position: relative;
+      padding: 10px 35px;
+      color: @navigation-links-color;
+      font-family: @font-family-ProximaNova-Bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: transparent;
+        content: '\2022';
+        text-shadow: 0 0 transparent;
+        font-size: 2em;
+        .transition();
+        transform: translateX(-50%);
+        pointer-events: none;
+      }
+
+      &:not(.active):hover::before {
+        color: @navigation-links-hover-color;
+        text-shadow: 15px 0 @navigation-links-hover-color, -15px 0 @navigation-links-hover-color;
+        .transition();
+      }
+
+      &.active {
+        color: @navigation-links-active-color;
+      }
+    }
+  }
+}
+
+div.menu-bar {
+  ul li.menu-icon {
+    display: none;
+    fill: @navigation-links-color;
+    padding-right: 15px;
+    .sm-block({ display: block; });
+  }
+}
+

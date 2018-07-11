@@ -1,0 +1,13 @@
+<title-component></title-component>
+<article id="content-container">
+  <div class="row" *ngFor="let burger of burgers">
+    <div class="description">
+      <h3>{{burger.name}}</h3>
+      <p>{{burger.description}}
+      </p>
+    </div>
+    <div class="presentation">
+      <img src={{burger.backgroundURL}}>
+    </div>
+  </div>
+</article>
